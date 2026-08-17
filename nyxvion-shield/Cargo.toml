@@ -1,0 +1,13 @@
+[package]
+name = "nyxvion-shield"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+adblock = "0.13.2"
+reqwest = { version = "0.13.4", features = ["blocking"] }
+libc = "0.2"
+
+[lib]
+name = "nyxvion_shield"
+crate-type = ["cdylib", "staticlib", "rlib"]
